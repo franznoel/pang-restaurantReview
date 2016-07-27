@@ -1,0 +1,28 @@
+{
+  "name": "pang-restaurantreview",
+  "version": "1.0.0",
+  "description": "Displays a list of restaurant, and a single restaurant page with a review form",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fritzdenim/pang-restaurantReview.git"
+  },
+  "keywords": [
+    "restaurant",
+    "reviewer"
+  ],
+  "author": "Franz Noel Tanglao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fritzdenim/pang-restaurantReview/issues"
+  },
+  "homepage": "https://github.com/fritzdenim/pang-restaurantReview#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2"
+  }
+}
