@@ -1,20 +1,19 @@
 .restaurant-content h3 {
-    padding:0;
-    margin:0 0 10px 0;
+  padding:0;
+  margin:0 0 10px 0;
 }
 .restaurant-description .restaurant-hours {
-    float: right !important;
+  float: right !important;
 }
 .restaurant-description .view-button {
-    clear:both;
+  clear:both;
 }
-
 .restaurant-content figure {
-    overflow:hidden;
-    width:100%;
-    max-height:300px;
+  overflow:hidden;
+  width:100%;
+  max-height:300px;
 }
 .restaurant-content img {
-    margin:auto;
-    width:100%;
+  margin:auto;
+  width:100%;
 }
