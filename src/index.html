@@ -4,14 +4,14 @@
     <title>Restaurant Reviewer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
     <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
   </head>
-  <body>
-
-    <nav class="navbar navbar-default">
+  <body ng-app="app">
+    <nav class="navbar navbar-default navbar-static-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -47,26 +47,10 @@
       </div><!-- /.container-fluid -->
     </nav>
       
-    <div id="content" class="container">
+    <div id="content" class="container" ng-controller="RestaurantController">
       <div class="row">
-        <div class="col-md-4">
-          <div class="panel panel-default">
-            <div class="panel-body restaurant-content">
-              <h3>Restaurant Name</h3>
-              <div class="restaurant-description">
-                <p>Address:</p>
-                <span class="restaurant-cuisine">Type:</span>
-                <span class="restaurant-hours">Hours:</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-
-        </div>
-        <div class="col-md-4">
-
-        </div>
+        <restaurants>
+        </restaurants>
       </div>
     </div>
 
