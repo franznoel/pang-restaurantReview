@@ -4,15 +4,15 @@ restaurantReview.config(['$locationProvider','$routeProvider',
     function($locationProvider,$routeProvider) {
     // $locationProvider.hashPrefix('!');
 
-    $routeProvider
-      .when('/', {
-        template: '<restaurants></restaurants>'
-      })
-      .when('/restaurants/:restaurantId',{
-        template:'<restaurant-detail></restaurant-detail>'
-      })
-      .otherwise('/');
-  }
+      $routeProvider
+        .when('/', {
+          template: '<restaurants></restaurants>'
+        })
+        .when('/restaurants/:restaurantId',{
+          template:'<restaurant-detail></restaurant-detail>'
+        })
+        .otherwise('/');
+    }
 ]);
 
 restaurantReview.controller('RestaurantController',['$scope',function($scope) {
