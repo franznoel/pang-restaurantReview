@@ -24,5 +24,8 @@
     "browser-sync": "^2.13.0",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2"
+  },
+  "dependencies": {
+    "angular-route": "^1.5.8"
   }
 }
