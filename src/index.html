@@ -11,7 +11,7 @@
     <script type="text/javascript" src="libs/angular-route/angular-route.min.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
   </head>
-  <body ng-app="app">
+  <body ng-app="restaurantReviewApp">
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -22,19 +22,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">pangRestaurant</a>
+          <a class="navbar-brand" href="#!/">pangRestaurant</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All Restaurants <span class="caret"></span></a>
+              <a href="#!/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All Restaurants <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Order By Name</a></li>
-                <li><a href="#">Order By Ratings</a></li>
-                <li><a href="#">Order By Date</a></li>
-                <li><a href="#">Order By Cuisine Type</a></li>
+                <li><a href="#!/restaurants/order/name">Order By Name</a></li>
+                <li><a href="#!/restaurants/order/ratings">Order By Ratings</a></li>
+                <li><a href="#!/restaurants/order/date">Order By Date</a></li>
+                <li><a href="#!/restaurants/order/type">Order By Cuisine Type</a></li>
               </ul>
             </li>
           </ul>
@@ -48,11 +48,8 @@
       </div><!-- /.container-fluid -->
     </nav>
       
-    <div id="content" class="container" ng-controller="RestaurantController">
-      <div class="row">
-        <restaurants>
-        </restaurants>
-      </div>
+    <div id="content" class="container">
+      <div ng-view></div>
     </div>
 
 

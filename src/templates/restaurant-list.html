@@ -1,0 +1,20 @@
+<div class="row" ng-controller="RestaurantListController">
+  <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-0 col-lg-3 col-lg-offset-0" ng-repeat='restaurant in restaurants'>
+    <div class="thumbnail restaurant-content">
+      <figure>
+        <img src="{{restaurant.photo}}" alt="{{restaurant.name}}" />
+      </figure>
+      <div class="caption">
+        <div class="restaurant-description">
+          <h3>{{restaurant.name}}</h3>
+          <p>Address:{{restaurant.address}}</p>
+          <p class="restaurant-cuisine">Type: {{restaurant.type}}</p>
+          <p class="restaurant-buttons">
+            <a href="#!/restaurants/{{restaurant.id}}" class="btn btn-primary btn-md view-button">View</a>
+            <a href="#!/restaurants/{{restaurant.id}}/edit" class="btn btn-default btn-md view-button">Edit</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
