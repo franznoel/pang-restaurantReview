@@ -23,8 +23,12 @@ angular.module('restaurantReviewApp')
   .controller('RestaurantListController',function($scope,Restaurant) {
     $scope.restaurants = Restaurant.query();
   })
-  .controller('RestaurantDetailController',function($scope,Restaurant) {
-    $scope.restaurant = Restaurant.get({id:Restaurant.id});
+  .controller('RestaurantDetailController',function($scope,$location,Restaurant) {
+    var path = $location.path();
+    path = path.split("/");
+    path = path[2];
+    console.log(path);
+    $scope.restaurant = Restaurant.get({id:path});
   })
   .controller('ErrorController',function($scope) {
     $scope.location = $location.absUrl();
