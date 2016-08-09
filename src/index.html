@@ -28,16 +28,18 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="dropdown">
-              <a href="#!/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All Restaurants <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#!/restaurants/order/name">Order By Name</a></li>
-                <li><a href="#!/restaurants/order/ratings">Order By Ratings</a></li>
-                <li><a href="#!/restaurants/order/date">Order By Date</a></li>
-                <li><a href="#!/restaurants/order/type">Order By Cuisine Type</a></li>
-              </ul>
-            </li>
+            <li><a>Restaurants Order By</a></li>
           </ul>
+          <div class="navbar-form navbar-left">
+            <div class="form-group">
+                <select id="restaurants" name="restaurants" class="form-control">
+                  <option value="name">Name</option>
+                  <option value="rating">Ratings</option>
+                  <option value="date">Date</option>
+                  <option value="type">Cuisine Type</option>
+                </select>
+            </div>
+          </div>
           <form class="navbar-form navbar-left">
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Search">
