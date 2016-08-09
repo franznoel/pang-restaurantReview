@@ -5,5 +5,39 @@
   <div class="col-md-8">
     <h2>{{restaurant.name}}</h2>
     <p>{{restaurant.address}}</p>
+    <hr/>
+    <div class="row">
+      <form method="post">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="author">Author</label>
+              <input type="text" class="form-control" name="author" value="" placeholder="Author" required />
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="form-group">
+              <label for="rating">Rating</label>
+              <select class="form-control" name="rating">
+                <option>5</option>
+                <option>4</option>
+                <option>3</option>
+                <option>2</option>
+                <option>1</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="form-group">
+              <label for="comment">Comment</label>
+              <textarea class="form-control" name="comment" rows="5" placeholder="Comment" required></textarea>
+            </div>
+          </div>
+        </div>
+      </form>
+      <hr/>
+    </div>
   </div>
 </div>
