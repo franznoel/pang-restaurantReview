@@ -1,0 +1,25 @@
+{
+  "id": "the-habit-burger-grill",
+  "name":"The Habit Burger Grill",
+  "photo": "images/the-habit-burger-grill.jpg",
+  "address": "7221 Van Nuys Blvd, Van Nuys, CA 91405",
+  "type": "Fast Food",
+  "hours": [
+    {"day": "Monday","from": "10:30:00","to": "22:00:00"},
+    {"day": "Tuesday","from": "10:30:00","to": "22:00:00"},
+    {"day": "Wednesday","from": "10:30:00","to": "22:00:00"},
+    {"day": "Thursday","from": "10:30:00","to": "22:00:00"},
+    {"day": "Friday","from": "10:30:00","to": "22:00:00"},
+    {"day": "Saturday","from": "10:30:00","to": "22:00:00"},
+    {"day": "Sunday","from": "10:30:00","to": "22:00:00"},
+  ],
+  "reviews": [
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5}
+  ]
+}

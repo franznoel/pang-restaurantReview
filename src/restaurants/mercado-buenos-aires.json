@@ -1,0 +1,25 @@
+{
+  "id": "mercado-buenos-aires",
+  "name":"Mercado Buenos Aires",
+  "photo": "images/mercado-buenos-aires.jpg",
+  "address": "7540 Sepulveda Blvd, Van Nuys, CA 91405",
+  "type": "Thai",
+  "hours": [
+    {"day": "Monday","from": "07:30:00","to": "20:00:00"},
+    {"day": "Tuesday","from": "07:30:00","to": "20:00:00"},
+    {"day": "Wednesday","from": "07:30:00","to": "20:00:00"},
+    {"day": "Thursday","from": "07:30:00","to": "20:00:00"},
+    {"day": "Friday","from": "07:30:00","to": "20:00:00"},
+    {"day": "Saturday","from": "07:30:00","to": "20:00:00"},
+    {"day": "Sunday","from": "07:30:00","to": "20:00:00"},
+  ],
+  "reviews": [
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5}
+  ]
+}

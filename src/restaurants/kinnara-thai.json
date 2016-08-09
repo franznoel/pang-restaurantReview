@@ -1,0 +1,25 @@
+{
+  "id": "kinnara-thai",
+  "name":"Kinnara Thai",
+  "photo": "images/kinnar-thai.jpg",
+  "address": "15355 Sherman Way, Van Nuys, CA 91406",
+  "type": "Thai",
+  "hours": [
+    {"day": "Monday","from": "11:00:00","to": "21:30:00"},
+    {"day": "Tuesday","from": "11:00:00","to": "21:30:00"},
+    {"day": "Wednesday","from": "11:00:00","to": "21:30:00"},
+    {"day": "Thursday","from": "11:00:00","to": "21:30:00"},
+    {"day": "Friday","from": "11:00:00","to": "21:30:00"},
+    {"day": "Saturday","from": "11:00:00","to": "21:30:00"},
+    {"day": "Sunday","from": "11:00:00","to": "21:30:00"},
+  ],
+  "reviews": [
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5}
+  ]
+}

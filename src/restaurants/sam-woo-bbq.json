@@ -1,0 +1,25 @@
+{
+  "id": "sam-woo-bbq",
+  "name":"Sam Woo BBQ",
+  "photo": "images/sam-woo-bbq.jpg",
+  "address": "6411 Sepulveda Blvd #1L, Van Nuys, CA 91411",
+  "type": "Chinese",
+  "hours": [
+    {"day": "Monday","from": "00:01:00","to": "24:00:00"},
+    {"day": "Tuesday","from": "00:01:00","to": "24:00:00"},
+    {"day": "Wednesday","from": "00:01:00","to": "24:00:00"},
+    {"day": "Thursday","from": "00:01:00","to": "24:00:00"},
+    {"day": "Friday","from": "00:01:00","to": "24:00:00"},
+    {"day": "Saturday","from": "00:01:00","to": "24:00:00"},
+    {"day": "Sunday","from": "00:01:00","to": "24:00:00"},
+  ],
+  "reviews": [
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5},
+    {"date":"","author":"Franz","comment":"I like this place","rating":5}
+  ]
+}

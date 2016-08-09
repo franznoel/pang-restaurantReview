@@ -20,12 +20,14 @@ angular.module('restaurantReviewApp')
         });
     }
   ])
-  .controller('RestaurantListController',function($scope) {
-    $scope.restaurants = ;
+  .controller('RestaurantListController',function($scope,Restaurant) {
+    $scope.restaurants = Restaurant.query();
   })
-  .controller('RestaurantDetailController',function($scope) {
+  .controller('RestaurantDetailController',function($scope,Restaurant) {
+    $scope.restaurant = Restaurant.get({id:Restaurant.id});
   })
   .controller('ErrorController',function($scope) {
+    $scope.location = $location.absUrl();
     $scope.title = '404 Error!';
     $scope.message = 'Oops! The page does not exist.';
   })
