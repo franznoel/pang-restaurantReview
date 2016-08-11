@@ -18,6 +18,9 @@ gulp.task('copy', function () {
   gulp.src('src/**/*.css')
     .pipe(gulp.dest('app'));
 
+  gulp.src('src/restaurants/**/*.json')
+    .pipe(gulp.dest('app/restaurants/'));
+
   gulp.src('src/images/**/{*.png,*.jpg,*.gif}')
     .pipe(gulp.dest('app/images/'));
 
