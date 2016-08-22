@@ -1,5 +1,10 @@
 'use strict';
-angular.module('restaurantReviewApp',['ngRoute','RestaurantService']);
+angular.module('restaurantReviewApp',[
+    'ngRoute',
+    'RestaurantService',
+    'RestaurantList',
+    'RestaurantDetail'
+  ]);
 angular.module('restaurantReviewApp')
   .config([
     '$locationProvider',
@@ -19,28 +24,42 @@ angular.module('restaurantReviewApp')
           templateUrl:'templates/404.html'
         });
     }
+  ]);
+
+angular.module('RestaurantList',[
+    'RestaurantService'
   ])
   .controller('RestaurantListController',function($scope,Restaurant) {
     $scope.restaurants = Restaurant.query();
-  })
+  });
+
+angular.module('RestaurantDetail',[
+    'ngRoute',
+    'RestaurantService'
+  ])
   .controller('RestaurantDetailController',function($scope,$routeParams,Restaurant) {
-    $scope.restaurant = Restaurant.get({restaurantId: $routeParams.id});
-  })
-  .controller('ErrorController',function($scope) {
+    // var self = this;
+    // console.log($routeParams.id);
+    $scope.restaurant = Restaurant.get({restaurantId:$routeParams.id});
+  });
+
+angular.module('RestaurantError',[
+    'ngRoute',
+  ])
+  .controller('RestaurantErrorController',function($scope) {
     $scope.title = '404 Error!';
     $scope.message = 'Oops! The page does not exist.';
-  })
+  });
 
 angular.module('RestaurantService',['ngResource'])
-  .factory('Restaurant',['$location','$resource',
-    function($location,$resource) {
-      var url = $location.host();
-      var Restaurant = $resource('/restaurants/:id.json',{},{
+  .factory('Restaurant',['$resource',
+    function($resource) {
+      var restaurant = $resource('/restaurants/:restaurantId.json',{},{
         query: {
           method: 'GET',
-          params: {id:'restaurants'},
+          params: {restaurantId:'restaurants'},
           isArray: true
         }
       });
-      return Restaurant;
+      return restaurant;
     }]);
