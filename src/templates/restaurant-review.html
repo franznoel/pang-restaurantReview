@@ -1,0 +1,45 @@
+<div class="row restaurant-detail" ng-controller="RestaurantDetailController">
+  <div class="col-md-4">
+    <img src="{{restaurant.photo}}" alt="{{restaurant.name}}" />
+  </div>
+  <div class="col-md-8">
+    <h2>{{restaurant.name}}</h2>
+    <p>{{restaurant.address}}</p>
+    <hr/>
+    <form method="post">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" class="form-control input-sm" name="author" value="" placeholder="Author" required />
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group">
+            <label for="rating">Rating</label>
+            <select class="form-control input-sm" name="rating" required>
+              <option>5</option>
+              <option>4</option>
+              <option>3</option>
+              <option>2</option>
+              <option>1</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="form-group">
+            <label for="comment">Comment</label>
+            <textarea class="form-control input-sm" name="comment" rows="3" placeholder="Comment" required></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="btn-toolbar">
+        <input type="button" class="btn btn-primary btn-sm" name="submit" value="Post" />
+        <a href="#!/restaurants/{{restaurant.id}}" class="btn btn-default btn-sm">Cancel</a>
+      </div>
+    </form>
+    <hr/>
+  </div>
+</div>

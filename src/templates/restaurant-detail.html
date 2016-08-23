@@ -6,6 +6,11 @@
     <h2>{{restaurant.name}}</h2>
     <p>{{restaurant.address}}</p>
     <hr/>
+    <div class="review-button-toolbar" class="btn-toolbar">
+      <div class="btn-group">
+        <a href="#!/restaurants/{{restaurant.id}}/review" class="btn btn-primary btn-sm">Review Restaurant</a>
+      </div>
+    </div>
     <div data-ng-repeat="review in restaurant.reviews">
       <div class="panel panel-default panel-xs">
         <div class="panel-body">
@@ -14,40 +19,5 @@
         </div>
       </div>
     </div>
-    <hr/>
-    <form method="post">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="author">Author</label>
-            <input type="text" class="form-control input-sm" name="author" value="" placeholder="Author" required />
-          </div>
-        </div>
-        <div class="col-md-2">
-          <div class="form-group">
-            <label for="rating">Rating</label>
-            <select class="form-control input-sm" name="rating" required>
-              <option>5</option>
-              <option>4</option>
-              <option>3</option>
-              <option>2</option>
-              <option>1</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8">
-          <div class="form-group">
-            <label for="comment">Comment</label>
-            <textarea class="form-control input-sm" name="comment" rows="3" placeholder="Comment" required></textarea>
-          </div>
-        </div>
-      </div>
-      <div class="btn-toolbar">
-        <input type="button" class="btn btn-primary btn-sm" name="submit" value="Post" />
-      </div>
-    </form>
-    <hr/>
   </div>
 </div>

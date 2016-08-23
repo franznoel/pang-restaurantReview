@@ -1,7 +1,9 @@
+/* Restaurant List */
 .restaurant-content h3 {
   padding:0;
   margin:0 0 10px 0;
 }
+/* Restaurant Detail */
 .restaurant-description .restaurant-hours {
   float: right !important;
 }
@@ -19,6 +21,10 @@
 .restaurant-content img {
   margin:auto;
   width:100%;
+}
+/* Review Styles */
+.review-button-toolbar {
+  padding-bottom:10px;
 }
 
 /* Error styles */

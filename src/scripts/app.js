@@ -19,6 +19,9 @@ angular.module('restaurantReviewApp')
         .when('/restaurants/:id',{
           templateUrl:'templates/restaurant-detail.html'
         })
+        .when('/restaurants/:id/review',{
+          templateUrl:'templates/restaurant-review.html'
+        })
         .otherwise('/404',{
           controller: 'ErrorController',
           templateUrl:'templates/404.html'
